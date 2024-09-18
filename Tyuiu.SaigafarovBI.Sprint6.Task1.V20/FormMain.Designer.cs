@@ -90,7 +90,7 @@
             // textBoxResult_SBI
             // 
             textBoxResult_SBI.BorderStyle = BorderStyle.None;
-            textBoxResult_SBI.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxResult_SBI.Font = new Font("Consolas", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             textBoxResult_SBI.Location = new Point(6, 41);
             textBoxResult_SBI.Multiline = true;
             textBoxResult_SBI.Name = "textBoxResult_SBI";
