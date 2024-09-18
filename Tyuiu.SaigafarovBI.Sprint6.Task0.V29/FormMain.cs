@@ -22,14 +22,14 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task0.V29
         }
         private void textBoxVarX_SBI_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if((e.KeyChar <= 47 ||  e.KeyChar >=58) && (e.KeyChar != '.') && (e.KeyChar != 8))
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != '.') && (e.KeyChar != 8))
             {
                 e.Handled = true;
             }
         }
         private void buttonQuestion_SBI_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы ПКТб-24-1 Сайгафаров Богдан Ирекович","Сообщение", MessageBoxButtons.OK);
+            MessageBox.Show("Таск 0 выполнил студент группы ПКТб-24-1 Сайгафаров Богдан Ирекович", "Сообщение", MessageBoxButtons.OK);
         }
     }
 }

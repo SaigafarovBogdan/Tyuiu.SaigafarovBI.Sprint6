@@ -171,6 +171,7 @@
             Controls.Add(groupBoxTask_SBI);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 0 | Вариант 29 | Сайгафаров Б.И.";
             groupBoxTask_SBI.ResumeLayout(false);
             groupBoxTask_SBI.PerformLayout();
