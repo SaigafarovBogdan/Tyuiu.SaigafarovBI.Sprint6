@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using tyuiu.cources.programming.interfaces.Sprint6;
 
-namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27.Lib
+namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V26.Lib
 {
     public class DataService : ISprint6Task2V26
     {
@@ -22,5 +17,6 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27.Lib
             }
             return values;
         }
+
     }
 }

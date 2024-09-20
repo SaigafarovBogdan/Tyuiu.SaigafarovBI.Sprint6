@@ -199,9 +199,9 @@
         private TextBox textBoxStartStep_SBI;
         private Label label2;
         private TextBox textBoxStopStep_SBI;
-        private Button buttonDone_SBI;
         private Label labelResult_SBI;
         private TextBox textBoxResult_SBI;
+        private Button buttonDone_SBI;
         private Button buttonHelp_SBI;
     }
 }

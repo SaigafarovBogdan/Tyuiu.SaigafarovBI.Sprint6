@@ -1,16 +1,6 @@
-п»їusing System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
-using Tyuiu.SaigafarovBI.Sprint6.Task2.V27.Lib;
+using Tyuiu.SaigafarovBI.Sprint6.Task2.V26.Lib;
 
-namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27
+namespace WinFormsAppChart
 {
     public partial class FormMain : Form
     {
@@ -18,7 +8,6 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27
         {
             InitializeComponent();
         }
-
         DataService dataService = new DataService(); 
         private void buttonDone_Click(object sender, EventArgs e)
         {
@@ -29,10 +18,10 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27
 
                 int len = dataService.GetMassFunction(startStep, stopStep).Length;
                 double[] valueArray = dataService.GetMassFunction(startStep, stopStep);
-                chartResult_SBI.Titles.Add("Р“СЂР°С„РёРє С„СѓРЅРєС†РёРё sin(x) + cos(2x)/2 - 1,5x");
+                chartResult_SBI.Titles.Add("График функции sin(x) + cos(2x)/2 - 1,5x");
 
-                chartResult_SBI.ChartAreas[0].AxisX.Title = "РћСЃСЊ X";
-                chartResult_SBI.ChartAreas[0].AxisY.Title = "РћСЃСЊ Y";
+                chartResult_SBI.ChartAreas[0].AxisX.Title = "Ось X";
+                chartResult_SBI.ChartAreas[0].AxisY.Title = "Ось Y";
                 for (int i = 0; i < len; i++)
                 {
                     dataGridView_SBI.Rows.Add(Convert.ToString(startStep), valueArray[i]);
@@ -42,7 +31,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27
             }
             catch
             {
-                MessageBox.Show("Р’РІРµРґРµРЅС‹ РЅРµРІРµСЂРЅС‹Рµ РґР°РЅРЅС‹Рµ ", "РћС€РёР±РєР°", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Введены неверные данные ", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void textBoxSteps_SBI_KeyPress(object sender, KeyPressEventArgs e)
@@ -54,7 +43,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27
         }
         private void buttonHelp_SBI_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("РўР°СЃРє 2 РІС‹РїРѕР»РЅРёР» СЃС‚СѓРґРµРЅС‚ РіСЂСѓРїРїС‹ РџРљРўР±-24-1 РЎР°Р№РіР°С„Р°СЂРѕРІ Р‘РѕРіРґР°РЅ РСЂРµРєРѕРІРёС‡", "РЎРѕРѕР±С‰РµРЅРёРµ", MessageBoxButtons.OK);
+            MessageBox.Show("Таск 2 выполнил студент группы ПКТб-24-1 Сайгафаров Богдан Ирекович", "Сообщение", MessageBoxButtons.OK);
         }
     }
 }

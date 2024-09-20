@@ -1,9 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-
-using Tyuiu.SaigafarovBI.Sprint6.Task2.V27.Lib;
-
-namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27.Test
+using Tyuiu.SaigafarovBI.Sprint6.Task2.V26.Lib;
+namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V26.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -27,6 +23,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task2.V27.Test
                 -8.88
             };
             CollectionAssert.AreEqual(wait, dataService.GetMassFunction(-5, 5));
+
         }
     }
 }
