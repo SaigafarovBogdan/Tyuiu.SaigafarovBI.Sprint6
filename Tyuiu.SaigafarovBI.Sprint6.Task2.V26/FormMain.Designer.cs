@@ -240,11 +240,11 @@
         private GroupBox groupBox2;
         private Label label1;
         private DataGridView dataGridView_SBI;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
         private Label label2;
         private Label label3;
         private TextBox textBoxStopStep_SBI;
         private TextBox textBoxStartStep_SBI;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
     }
 }

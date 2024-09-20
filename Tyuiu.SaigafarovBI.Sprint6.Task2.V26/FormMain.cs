@@ -22,6 +22,7 @@ namespace WinFormsAppChart
 
                 chartResult_SBI.ChartAreas[0].AxisX.Title = "Îñü X";
                 chartResult_SBI.ChartAreas[0].AxisY.Title = "Îñü Y";
+
                 for (int i = 0; i < len; i++)
                 {
                     dataGridView_SBI.Rows.Add(Convert.ToString(startStep), valueArray[i]);
