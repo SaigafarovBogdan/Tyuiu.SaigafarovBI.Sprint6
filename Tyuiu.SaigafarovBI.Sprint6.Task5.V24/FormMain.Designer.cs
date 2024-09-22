@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             chart_SBI = new System.Windows.Forms.DataVisualization.Charting.Chart();
             panel1 = new Panel();
             buttonOpen_SBI = new Button();
@@ -53,14 +53,14 @@
             // 
             // chart_SBI
             // 
-            chartArea1.Name = "ChartArea1";
-            chart_SBI.ChartAreas.Add(chartArea1);
+            chartArea4.Name = "ChartArea1";
+            chart_SBI.ChartAreas.Add(chartArea4);
             chart_SBI.Location = new Point(9, 11);
             chart_SBI.Name = "chart_SBI";
             chart_SBI.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            chart_SBI.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.Name = "Series1";
+            chart_SBI.Series.Add(series4);
             chart_SBI.Size = new Size(612, 295);
             chart_SBI.TabIndex = 0;
             chart_SBI.Text = "chart1";

@@ -25,10 +25,10 @@ namespace WinFormsAppChart
 
             valueArray = dataService.LoadFromDataFile(path);
 
-            for(int i = 0; i < valueArray.Length; i++)
+            for (int i = 0; i < valueArray.Length; i++)
             {
-                dataGridView_SBI.Rows.Add(Convert.ToString(i),Convert.ToString(valueArray[i]));
-                chart_SBI.Series[0].Points.AddXY(i,valueArray[i]);
+                dataGridView_SBI.Rows.Add(Convert.ToString(i), Convert.ToString(valueArray[i]));
+                chart_SBI.Series[0].Points.AddXY(i, valueArray[i]);
             }
         }
         private void buttonHelp_Click(object sender, EventArgs e)
