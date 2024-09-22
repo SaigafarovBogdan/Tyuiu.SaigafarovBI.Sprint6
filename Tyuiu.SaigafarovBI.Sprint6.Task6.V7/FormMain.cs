@@ -7,6 +7,8 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task6.V7
         public FormMain()
         {
             InitializeComponent();
+            textBoxOutput_SBI.ScrollBars = ScrollBars.Vertical;
+            textBoxInput_SBI.ScrollBars = ScrollBars.Vertical;
         }
         string openFilePath;
         DataService dataService = new DataService();

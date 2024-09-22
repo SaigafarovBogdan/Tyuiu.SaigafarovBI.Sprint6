@@ -15,7 +15,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task6.V7.Lib
                 while ((line = reader.ReadLine()) != null)
                 {
                     fragments = line.Split(' ');
-                    result += fragments[2].Length > 0 ? line.Split(' ')[2] : "";
+                    result += fragments.Length > 2 ? fragments[2] + " " : "";
                 }
             }
             return result;
