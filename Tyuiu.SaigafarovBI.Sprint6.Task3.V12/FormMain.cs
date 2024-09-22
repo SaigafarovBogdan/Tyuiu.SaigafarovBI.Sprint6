@@ -28,18 +28,18 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task3.V12
             matrix = dataService.Calculate(matrix);
             dataGridView_SBI.ColumnCount = columns;
             dataGridView_SBI.RowCount = rows;
-            for(int i = 0; i < columns; i++)
+            for (int i = 0; i < columns; i++)
             {
                 dataGridView_SBI.Columns[i].Width = 25;
             }
-            for(int i = 0;i < rows; i++)
+            for (int i = 0; i < rows; i++)
             {
-                for(int j = 0; j < columns; j++)
+                for (int j = 0; j < columns; j++)
                 {
                     dataGridView_SBI.Rows[i].Cells[j].Value = Convert.ToString(matrix[i, j]);
                 }
             }
-                
+
         }
         private void buttonHelp_SBI_Click(object sender, EventArgs e)
         {
