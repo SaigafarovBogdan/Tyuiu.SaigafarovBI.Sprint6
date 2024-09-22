@@ -10,7 +10,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task6.V7.Lib
             string result = "";
             using (StreamReader reader = new StreamReader(path))
             {
-                string line;
+                string? line;
                 string[] fragments;
                 while ((line = reader.ReadLine()) != null)
                 {
