@@ -9,7 +9,7 @@ namespace WinFormsAppChart
             InitializeComponent();
         }
         DataService dataService = new DataService();
-        string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutFileTask5.txt");
+        string path = Path.Combine(Path.GetTempPath(), Path.GetTempFileName());
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
