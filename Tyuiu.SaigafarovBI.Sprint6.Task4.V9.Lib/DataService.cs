@@ -17,7 +17,6 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task4.V9.Lib
                     continue;
                 } 
                 valueArray[index] = Math.Round((2*i-3)/(Math.Cos(i)-2*i) + 5*i - Math.Sin(i),2);
-                if (valueArray[index] == -3.0) valueArray[index] = -3;
                 index++;
             }
             return valueArray;
