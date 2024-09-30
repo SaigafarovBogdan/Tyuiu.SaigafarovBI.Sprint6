@@ -24,7 +24,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task5.V24.Lib
                     index++;
                 }
             }
-            valueArray = valueArray.Where(val => val ==0).ToArray();
+            valueArray = valueArray.Where(val => val ==0.0).ToArray();
             return valueArray;
         }
     }
