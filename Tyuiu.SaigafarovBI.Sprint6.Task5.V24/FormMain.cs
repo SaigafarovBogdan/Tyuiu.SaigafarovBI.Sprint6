@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Tyuiu.SaigafarovBI.Sprint6.Task5.V24.Lib;
 
 namespace WinFormsAppChart
@@ -9,7 +10,8 @@ namespace WinFormsAppChart
             InitializeComponent();
         }
         DataService dataService = new DataService();
-        string path = Path.Combine(Path.GetTempPath(), Path.GetTempFileName());
+        //string path = Path.Combine(Path.GetTempPath(), Path.GetTempFileName());
+        string path = Path.Combine(@"C:\Users\User\source\repos\Tyuiu.SaigafarovBI.Sprint6\Tyuiu.SaigafarovBI.Sprint6.Task5.V24\bin\Debug\net8.0-windows\InPutFileTask5.txt");
 
         private void buttonDone_Click(object sender, EventArgs e)
         {

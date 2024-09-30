@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.SaigafarovBI.Sprint6.Task5.V24.Lib
 {
