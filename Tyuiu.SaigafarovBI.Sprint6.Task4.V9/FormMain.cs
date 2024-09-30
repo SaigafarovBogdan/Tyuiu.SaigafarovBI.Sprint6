@@ -41,7 +41,8 @@ namespace WinFormsAppChart
         {
             try
             {
-                string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask4.txt";
+                string[] paths = { Path.GetTempPath(), Path.GetTempFileName() };
+                string path = Path.Combine(paths);
                 File.WriteAllText(path, textBoxResult_SBI.Text);
                 DialogResult dialogResult = MessageBox.Show("Файл" + path + " сохранен успешно!\n Открыть его в блокноте?", "Сообщение", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (dialogResult == DialogResult.Yes)
