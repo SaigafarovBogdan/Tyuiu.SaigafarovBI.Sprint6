@@ -23,7 +23,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task7.V21.Lib
             }
             for (int i = 0; i < rows; i++)
             {
-                for (int j = 8; j <= 8; j++)
+                for (int j = 7; j <= 7; j++)
                 {
                     if (arrayValues[i, j] != 5) arrayValues[i, j] = -1;
                 }
