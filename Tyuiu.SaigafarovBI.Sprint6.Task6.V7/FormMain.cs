@@ -15,7 +15,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task6.V7
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
-            textBoxOutput_SBI.Text = dataService.CollectTextFromFile("",openFilePath);
+            textBoxOutput_SBI.Text = dataService.CollectTextFromFile(openFilePath);
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
