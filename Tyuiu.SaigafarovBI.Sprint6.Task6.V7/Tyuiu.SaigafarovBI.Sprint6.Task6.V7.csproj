@@ -8,9 +8,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.SaigafarovBI.Sprint6.Task6.V7.Lib\Tyuiu.SaigafarovBI.Sprint6.Task6.V7.Lib.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
