@@ -19,6 +19,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task6.V7.Lib
                     result += fragments.Length > 2 ? fragments[2] + " " : "";
                 }
             }
+            result = result.Trim();
             return result;
         }
     }
