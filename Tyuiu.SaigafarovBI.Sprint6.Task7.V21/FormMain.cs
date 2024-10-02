@@ -39,8 +39,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task7.V21
 
         private void buttonDone_SBI_Click(object sender, EventArgs e)
         {
-            int[,] matrix = dataService.GetMatrix(openFilePath);
-            int[,] values = CalculateMatrix(ref matrix);
+            int[,] values = dataService.GetMatrix(openFilePath);
 
             for (int i = 0; i < rows; i++)
             {
@@ -59,7 +58,7 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task7.V21
 
             if (openFilePath != null)
             {
-                int[,] arrayValues = dataService.GetMatrix(openFilePath);
+                int[,] arrayValues = dataService.GetStartMatrix(openFilePath);
 
                 rows = arrayValues.GetLength(0);
                 columns = arrayValues.GetLength(1);
@@ -116,17 +115,6 @@ namespace Tyuiu.SaigafarovBI.Sprint6.Task7.V21
                 File.AppendAllText(path, str + Environment.NewLine);
                 str = "";
             }
-        }
-        private int[,] CalculateMatrix(ref int[,] matrix)
-        {
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 8; j <= 8; j++)
-                {
-                    if (matrix[i, j] != 5) matrix[i, j] = -1;
-                }
-            }
-            return matrix;
         }
     }
 }
